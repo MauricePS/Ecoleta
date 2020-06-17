@@ -63,8 +63,8 @@ for (const item of itemsToCollect) {
 
 const collectedItems = document.querySelector("input[name=items]")
 
-// variavel pode ser "let" ou "var"
-let selectedItems = []; //Array pois está com []...coleção de dados
+
+let selectedItems = []; //Array [] coleção de dados
 
 function handleSelectedItem(event) {
     const itemLi = event.target
@@ -87,9 +87,9 @@ function handleSelectedItem(event) {
 
     
     //se já estiver selecionado, tirar da selecao
-    if(alreadySelected >= 0 ) { //Zero pq a posicao de array começa no Zero
+    if(alreadySelected >= 0 ) {
         const filteredItems = selectedItems.filter( item =>{
-            const itemIsDifferent = item != itemId //isso retorna o falso se for igual então ele tira
+            const itemIsDifferent = item != itemId //isso retorna o falso caso igual então ele tira
             return itemIsDifferent
         })
 
